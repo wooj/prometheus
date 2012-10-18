@@ -11,14 +11,14 @@ function my_theme_register_required_plugins() {
             'name'     => 'Page Options', // The plugin name
             'slug'     => 'page-options', // The plugin slug (typically the folder name)
             'source'   => get_template_directory() . '/includes/plugins/advanced-custom-fields.3.5.0.zip', // The plugin source
-            'required' => false,
+            'required' => true,
         ),
 		
 			     array(
             'name'     => 'Theme Options', // The plugin name
             'slug'     => 'theme-options', // The plugin slug (typically the folder name)
             'source'   => get_template_directory() . '/includes/plugins/option-tree.2.0.9.zip', // The plugin source
-            'required' => false,
+            'required' => true,
         ),
 
     );
