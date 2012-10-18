@@ -1,0 +1,141 @@
+body,html { font-family:helvetica;}
+
+
+#facebook  { background:url(assets/images/nav-icons/facebook.png) 50% 50% no-repeat;  background-size: 32px 32px; }
+#twitter  { background:url(assets/images/nav-icons/twitter.png) 50% 50% no-repeat;  background-size: 32px 32px; }
+#gplus  { background:url(assets/images/nav-icons/gplus.png) 50% 50% no-repeat;  background-size: 32px 32px; }
+#linkedin  { background:url(assets/images/nav-icons/linkedin.png) 50% 50% no-repeat;  background-size: 32px 32px; }
+#youtube  { background:url(assets/images/nav-icons/youtube.png) 50% 50% no-repeat;  background-size: 32px 32px; }
+
+
+#dribble  { background:url(assets/images/nav-icons/dribble.png) 50% 50% no-repeat;  background-size: 28px 29px; }
+#mail  { background:url(assets/images/nav-icons/mail.png) 50% 50% no-repeat;  background-size: 27px 18px; }
+#mail2  { background:url(assets/images/nav-icons/mail2.png) 50% 50% no-repeat;  background-size: 27px 19px; }
+#phone  { background:url(assets/images/nav-icons/phone.png) 50% 50% no-repeat;  background-size: 29px 30px; }
+#phone2  { background:url(assets/images/nav-icons/phone2.png) 50% 50% no-repeat;  background-size: 30px 25px; }
+#phone3  { background:url(assets/images/nav-icons/phone3.png) 50% 50% no-repeat;  background-size: 30px 21px; }
+#rss  { background:url(assets/images/nav-icons/rss.png) 50% 50% no-repeat;  background-size: 29px 30px; }
+
+
+#twitter2  { background:url(assets/images/nav-icons/twitter2.png) 50% 50% no-repeat;  background-size: 30px 21px; }
+#you-tube  { background:url(assets/images/nav-icons/you-tube.png) 50% 50% no-repeat;  background-size: 30px 30px; }
+#wordpress  { background:url(assets/images/nav-icons/wordpress.png) 50% 50% no-repeat;  background-size: 28px 28px; }
+#v-card  { background:url(assets/images/nav-icons/v-card.png) 50% 50% no-repeat;  background-size: 30px 23px; }
+#car  { background:url(assets/images/nav-icons/car.png) 50% 50% no-repeat;  background-size: 30px 16px; }
+#cell  { background:url(assets/images/nav-icons/cell.png) 50% 50% no-repeat;  background-size: 18px 30px; }
+#cell2  { background:url(assets/images/nav-icons/cell2.png) 50% 50% no-repeat;  background-size: 17px 30px; }
+#cell3  { background:url(assets/images/nav-icons/cell3.png) 50% 50% no-repeat;  background-size: 15px 30px; }
+#calendar  { background:url(assets/images/nav-icons/calendar.png) 50% 50% no-repeat;  background-size: 30px 26px; }
+#calendar2  { background:url(assets/images/nav-icons/calendar2.png) 50% 50% no-repeat;  background-size: 28px 29px; }
+
+#top_nav ,#bottom_nav { width:100%;overflow:auto;}
+#top_nav a { width:25%;background-color:#333;float:left;display:inline-block;height:50px;}
+
+#top_nav { position:fixed; top:0;}
+#bottom_nav { position:fixed; bottom:0;}
+#bottom_nav a { position:relative;}
+#bottom_nav a span.text {position:absolute;top:50px;}
+#bottom_nav a:link, #bottom_nav a:visited { color:#fff;text-decoration:none;font-size:10px;}
+#bottom_nav a{ width:25%;background-color:#333;float:left;display:inline-block;height:65px;}
+
+#top_nav a:hover, #bottom_nav a:hover { background-color:pink;}
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	block onefourth, block onethird, block onehalf, block twothird, block threefourth, block whole { margin: 0 10px;}
+	block onefourth { width:172px;}
+	block onethird { width:236px;}
+	block onehalf { width:364px;}
+	block twothird { width:492px;}
+	block threefourth {width:412px; }
+	block whole { width:748px;}
+	block { width:768px;}
+	
+
+
+
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+	    @media only screen and (max-width: 767px) {
+		
+		
+	block onefourth, block onethird, block onehalf, block twothird, block threefourth, block whole { margin: 0 10px;}
+	block onefourth { width:300px;}
+	block onethird { width:300px;}
+	block onehalf { width:300px;}
+	block twothird { width:300px;}
+	block threefourth {width:300px; }
+	block whole { width:300px;}
+	block { width:300px;}
+
+
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+	
+
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	block onefourth, block onethird, block onehalf, block twothird, block threefourth, block whole { margin: 0 10px;}
+	block onefourth { width:420px;}
+	block onethird { width:420px;}
+	block onehalf { width:420px;}
+	block twothird { width:420px;}
+	block threefourth {width:420px; }
+	block whole { width:420px;}
+	block { width:420px;}
+	
+	
+
+    }
+
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+	

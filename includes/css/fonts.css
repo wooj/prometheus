@@ -1,0 +1,566 @@
+
+
+@font-face {
+    font-family: 'lobster';
+    src: url('<?php echo get_template_directory(); ?>/lobster/Lobster_1.3-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/lobster/Lobster_1.3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/lobster/Lobster_1.3-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/lobster/Lobster_1.3-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/lobster/Lobster_1.3-webfont.svg#Lobster13Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'LobsterTwoRegular';
+    src: url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-Regular-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-Regular-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-Regular-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-Regular-webfont.svg#LobsterTwoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LobsterTwoItalic';
+    src: url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-Italic-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-Italic-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-Italic-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-Italic-webfont.svg#LobsterTwoItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LobsterTwoBold';
+    src: url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-Bold-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-Bold-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-Bold-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-Bold-webfont.svg#LobsterTwoBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LobsterTwoBoldItalic';
+    src: url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-BoldItalic-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-BoldItalic-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-BoldItalic-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/lobster_two/LobsterTwo-BoldItalic-webfont.svg#LobsterTwoBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}@font-face {
+    font-family: 'opensans';
+    src: url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Regular-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Regular-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Italic-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Italic-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Semibold-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-SemiboldItalic-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-SemiboldItalic-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Bold-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Bold-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: '<?php echo get_template_directory(); ?>/OpenSansBoldItalic';
+    src: url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-BoldItalic-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-BoldItalic-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-BoldItalic-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+
+
+@font-face {
+    font-family: 'opensans';
+    src: url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-ExtraBoldItalic-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-ExtraBoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-ExtraBoldItalic-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/open_sans/OpenSans-ExtraBoldItalic-webfont.svg#OpenSansExtraboldItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'rawen';
+    src: url('<?php echo get_template_directory(); ?>/rawengulk_sans/rawenRawengulkSans-094-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/rawengulk_sans/RawengulkSans-094-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/rawengulk_sans/RawengulkSans-094-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/rawengulk_sans/RawengulkSans-094-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/rawengulk_sans/RawengulkSans-094-webfont.svg#RawengulkSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'printclearly';
+    src: url('<?php echo get_template_directory(); ?>/print_clearly/PrintClearly-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/print_clearly/PrintClearly-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/print_clearly/PrintClearly-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/print_clearly/PrintClearly-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/print_clearly/PrintClearly-webfont.svg#PrintClearlyRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'quicksand';
+    src: url('<?php echo get_template_directory(); ?>/quicksand/Quicksand_Light-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/quicksand/Quicksand_Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/quicksand/Quicksand_Light-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/quicksand/Quicksand_Light-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/quicksand/Quicksand_Light-webfont.svg#QuicksandLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'lane';
+    src: url('<?php echo get_template_directory(); ?>/lane/LANENAR_-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/lane/LANENAR_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/lane/LANENAR_-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/lane/LANENAR_-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/lane/LANENAR_-webfont.svg#LaneNarrowRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('<?php echo get_template_directory(); ?>/raleway/raleway_thin-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/raleway/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/raleway/raleway_thin-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/raleway/raleway_thin-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/raleway/raleway_thin-webfont.svg#RalewayThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'chunkfive';
+    src: url('<?php echo get_template_directory(); ?>/chunkfive/Chunkfive-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/chunkfive/Chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/chunkfive/Chunkfive-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/chunkfive/Chunkfive-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/chunkfive/Chunkfive-webfont.svg#ChunkFiveRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'coffee';
+    src: url('<?php echo get_template_directory(); ?>/coffee/coffee_service-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/coffee/coffee_service-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/coffee/coffee_service-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/coffee/coffee_service-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/coffee/coffee_service-webfont.svg#coffee_serviceRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bevan';
+    src: url('<?php echo get_template_directory(); ?>/bevan/Bevan-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/bevan/Bevan-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/bevan/Bevan-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/bevan/Bevan-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/bevan/Bevan-webfont.svg#BevanRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'museo';
+    src: url('<?php echo get_template_directory(); ?>/museo_sans/museosans-100-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/museo_sans/museosans-100-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/museo_sans/museosans-100-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/museo_sans/museosans-100-webfont.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'museo';
+    src: url('<?php echo get_template_directory(); ?>/museo_sans/museosans_700-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/museo_sans/museosans_700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/museo_sans/museosans_700-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/museo_sans/museosans_700-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'museo';
+    src: url('<?php echo get_template_directory(); ?>/museo_sans/museosans_900-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/museo_sans/museosans_900-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/museo_sans/museosans_900-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/museo_sans/museosans_900-webfont.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+
+
+
+
+@font-face {
+    font-family: 'novecento_wide';
+    src: url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-light-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-light-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-light-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-light-webfont.svg#NovecentowideLightRegular') format('svg');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'novecento_wide';
+    src: url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-book-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-book-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-book-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-book-webfont.svg#NovecentowideBookRegular') format('svg');
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'novecento_wide';
+    src: url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-normal-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-normal-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-normal-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-normal-webfont.svg#NovecentowideNormalRegular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'novecento_wide';
+    src: url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-medium-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-medium-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-medium-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-medium-webfont.svg#NovecentowideUltraLightBold') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'novecento_wide';
+    src: url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-demibold-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-demibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-demibold-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-demibold-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-demibold-webfont.svg#NovecentowideLightBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'novecento_wide';
+    src: url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-bold-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-bold-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-bold-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/novecento_wide/novecentowide-bold-webfont.svg#NovecentowideBookBold') format('svg');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('<?php echo get_template_directory(); ?>/lato/Lato-BlaIta-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/lato/Lato-BlaIta-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/lato/Lato-BlaIta-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/lato/Lato-BlaIta-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/lato/Lato-BlaIta-webfont.svg#LatoBlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('<?php echo get_template_directory(); ?>/lato/Lato-Bla-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/lato/Lato-Bla-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/lato/Lato-Bla-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/lato/Lato-Bla-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/lato/Lato-Bla-webfont.svg#LatoBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'lato';
+    src: url('<?php echo get_template_directory(); ?>/lato/Lato-HaiIta-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/lato/Lato-HaiIta-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/lato/Lato-HaiIta-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/lato/Lato-HaiIta-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/lato/Lato-HaiIta-webfont.svg#LatoHairlineItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('<?php echo get_template_directory(); ?>/lato/Lato-Hai-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/lato/Lato-Hai-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/lato/Lato-Hai-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/lato/Lato-Hai-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/lato/Lato-Hai-webfont.svg#LatoHairline') format('svg');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'league';
+    src: url('<?php echo get_template_directory(); ?>/league_gothic/League_Gothic-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/league_gothic/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/league_gothic/League_Gothic-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/league_gothic/League_Gothic-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/league_gothic/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Slab ../davinci/css/fonts */
+
+
+@font-face {
+    font-family: 'alfa';
+    src: url('<?php echo get_template_directory(); ?>/alfa_slab/AlfaSlabOne-Regular-OTF-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/alfa_slab/AlfaSlabOne-Regular-OTF-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/alfa_slab/AlfaSlabOne-Regular-OTF-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/alfa_slab/AlfaSlabOne-Regular-OTF-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/alfa_slab/AlfaSlabOne-Regular-OTF-webfont.svg#AlfaSlabOneRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'museo_slab';
+    src: url('<?php echo get_template_directory(); ?>/museo_slab/museo100-regular-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/museo_slab/museo100-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/museo_slab/museo100-regular-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/museo_slab/museo100-regular-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/museo_slab/museo100-regular-webfont.svg#Museo100Regular') format('svg');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'museo_slab';
+    src: url('<?php echo get_template_directory(); ?>/museo_slab/museo300-regular-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/museo_slab/museo300-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/museo_slab/museo300-regular-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/museo_slab/museo300-regular-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/museo_slab/museo300-regular-webfont.svg#Museo300Regular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'museo_slab';
+    src: url('<?php echo get_template_directory(); ?>/museo_slab/museo500-regular-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/museo_slab/museo500-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/museo_slab/museo500-regular-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/museo_slab/museo500-regular-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/museo_slab/museo500-regular-webfont.svg#Museo500Regular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'museo_slab';
+    src: url('<?php echo get_template_directory(); ?>/museo_slab/museo700-regular-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/museo_slab/museo700-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/museo_slab/museo700-regular-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/museo_slab/museo700-regular-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/museo_slab/museo700-regular-webfont.svg#Museo700Regular') format('svg');
+    font-weight:  700;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'museo_slab';
+    src: url('<?php echo get_template_directory(); ?>/museo_slab/museo900-regular-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/museo_slab/museo900-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/museo_slab/museo900-regular-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/museo_slab/museo900-regular-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/museo_slab/museo900-regular-webfont.svg#Museo900Regular') format('svg');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'arvo';
+    src: url('<?php echo get_template_directory(); ?>/arvo/Arvo-Regular-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/arvo/Arvo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/arvo/Arvo-Regular-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/arvo/Arvo-Regular-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/arvo/Arvo-Regular-webfont.svg#ArvoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arvo';
+    src: url('<?php echo get_template_directory(); ?>/arvo/Arvo-Italic-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/arvo/Arvo-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/arvo/Arvo-Italic-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/arvo/Arvo-Italic-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/arvo/Arvo-Italic-webfont.svg#ArvoItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'ArvoBold';
+    src: url('<?php echo get_template_directory(); ?>/arvo/Arvo-Bold-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/arvo/Arvo-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/arvo/Arvo-Bold-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/arvo/Arvo-Bold-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/arvo/Arvo-Bold-webfont.svg#ArvoBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ArvoBoldItalic';
+    src: url('<?php echo get_template_directory(); ?>/arvo/Arvo-BoldItalic-webfont.eot');
+    src: url('<?php echo get_template_directory(); ?>/arvo/Arvo-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<?php echo get_template_directory(); ?>/arvo/Arvo-BoldItalic-webfont.woff') format('woff'),
+         url('<?php echo get_template_directory(); ?>/arvo/Arvo-BoldItalic-webfont.ttf') format('truetype'),
+         url('<?php echo get_template_directory(); ?>/arvo/Arvo-BoldItalic-webfont.svg#ArvoBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
