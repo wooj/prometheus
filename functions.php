@@ -6,21 +6,21 @@ require_once dirname( __FILE__ ) . '/includes/plugins/activation.php';
  add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );
 function my_theme_register_required_plugins() {
     $plugins = array(
-		array(
-            'name' => 'Advanced Custom Fields by Elliot Condon',
-            'slug' => 'advanced-custom-fields',
-			'required' => true,
+	
+	     array(
+            'name'     => 'Page Options', // The plugin name
+            'slug'     => 'page-options', // The plugin slug (typically the folder name)
+            'source'   => get_template_directory() . '/includes/plugins/advanced-custom-fields.3.5.0.zip', // The plugin source
+            'required' => false,
         ),
-		array(
-            'name' => 'GitHub Theme Updater',
-            'slug' => 'theme-updater',
-			'required' => true,
+		
+			     array(
+            'name'     => 'Theme Options', // The plugin name
+            'slug'     => 'theme-options', // The plugin slug (typically the folder name)
+            'source'   => get_template_directory() . '/includes/plugins/option-tree.2.0.9.zip', // The plugin source
+            'required' => false,
         ),
-		array(
-            'name' => 'OptionTree by Valen Designs',
-            'slug' => 'option-tree',
-			'required' => true,
-        ),
+
     );
     $theme_text_domain = 'prometheus';
  
