@@ -1,5 +1,7 @@
 <?php
 
+include_once ( 'includes/mobile/is_mobile.php');
+
 require_once dirname( __FILE__ ) . '/includes/plugins/activation.php';
  add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );
 function my_theme_register_required_plugins() {
