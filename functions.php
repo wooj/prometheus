@@ -329,7 +329,7 @@ echo '<style>
 	#poststuff .acf_postbox .inside {font-size:16px;}
 	#poststuff .acf_postbox p.label label { font-size:13px !important;line-height:1.1em;text-shadow:1px 1px 4px yellow;}
 
-	#wpwrap { top:-16px;}
+	#wpwrap { top:33px;}
 	#footer { display:none;}
 	
 	/*************************************************************************
