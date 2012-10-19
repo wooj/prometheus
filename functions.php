@@ -32,6 +32,15 @@ function my_theme_register_required_plugins() {
             'source'   => get_template_directory() . '/includes/plugins/advanced-custom-fields.3.5.0.zip', // The plugin source
             'required' => true,
         ),
+		
+		array(
+            'name'     => 'Github Theme & Plugin Updater', // The plugin name
+            'slug'     => 'githug-ucf', // The plugin slug (typically the folder name)
+            'source'   => get_template_directory() . '/includes/plugins/ucf.zip', // The plugin source
+            'required' => true,
+        ),
+		
+		
 
     );
     $theme_text_domain = 'prometheus';
