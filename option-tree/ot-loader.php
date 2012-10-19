@@ -87,7 +87,7 @@ if ( ! class_exists( 'OT_Loader' ) ) {
        *
        * @since     2.0
        */
-      define( 'OT_THEME_MODE', apply_filters( 'ot_theme_mode', false ) );
+      define( 'OT_THEME_MODE', apply_filters( 'ot_theme_mode', true ) );
       
       /**
        * For developers: Show Pages.
