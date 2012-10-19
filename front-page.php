@@ -11,10 +11,6 @@ Template Name: Front Page
 		
 		<?php get_header(); ?> 
 		
-		<?php if(get_field('featured_slider_option') == 'on') : ?>
-			<?php include( get_template_directory().'/featured_slider.php'); ?>
-		<?php endif; ?>
-		
 		<?php the_content(); ?>
 		<?php get_footer(); ?>
 
