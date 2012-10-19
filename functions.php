@@ -1,6 +1,13 @@
 <?php
 
-include_once('includes/custom-admin-styles.php'); 
+//----------------------------------------------------------------------------------------------------    CUSTOM FONTS
+
+add_action('admin_head', 'my_custom_fonts');
+
+function my_custom_fonts() 
+{
+ include_once ('includes/css/admin-css.php');
+ } 
 
 /**
  * Optional: set 'ot_show_pages' filter to false.
@@ -37,7 +44,7 @@ function my_theme_register_required_plugins() {
 		
 		array(
             'name'     => 'Github Theme & Plugin Updater', // The plugin name
-            'slug'     => 'githug-ucf', // The plugin slug (typically the folder name)
+            'slug'     => 'github-ucf', // The plugin slug (typically the folder name)
             'source'   => get_template_directory() . '/includes/plugins/ucf.zip', // The plugin source
             'required' => true,
         ),

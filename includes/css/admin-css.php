@@ -1,11 +1,3 @@
-
-
-//----------------------------------------------------------------------------------------------------    CUSTOM FONTS
-
-add_action('admin_head', 'my_custom_fonts');
-
-function my_custom_fonts() 
-{
 echo '<style>
 
   #toplevel_page_ot-settings{display:none;}
@@ -35,8 +27,8 @@ echo '<style>
 	#acf-content_block .widefat { padding:20px 0;}
 	#poststuff .acf_postbox .inside {font-size:16px;}
 	#poststuff .acf_postbox p.label label { font-size:13px !important;line-height:1.1em;text-shadow:1px 1px 4px yellow;}
-
-	#wpwrap { top:33px;}
+	#wpadminbar { display:none;}
+	#wpwrap { top:-33px;}
 	#footer { display:none;}
 	
 	/*************************************************************************
@@ -289,7 +281,7 @@ a:hover, a:active, a:focus {
     color: #000;
 } 
 #wpwrap {
-	background: url('.get_bloginfo('template_directory').'/includes/css/bg/white/21.png)repeat;
+	background: url('<?php bloginfo('template_directory') ;?>/includes/css/bg/white/21.png')repeat;
 }
 
 #adminmenuback,#adminmenuwrap {
@@ -507,6 +499,5 @@ div.timestamp-wrap {
 	margin:15px auto;
 	
 }
-</style>';
 
-}
+</style>';
