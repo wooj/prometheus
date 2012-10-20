@@ -29,7 +29,7 @@
 				<div class="post_image" >
 					<?php if(has_post_thumbnail()) : the_post_thumbnail('one_half'); ?>
 					<?php else : ?>
-					<img src="<?php bloginfo('template_url'); ?>/placeholders/one_fourth.jpg" >
+					<img src="<?php bloginfo('template_url'); ?>/includes/css/placeholder/one_half.png" >
 					<?php endif; ?>
 				</div>
 
