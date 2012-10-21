@@ -45,7 +45,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/includes/css/formalize.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/includes/css/colors.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/includes/css/lightbox.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/prometheus.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/includes/css/prometheus.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<!-- ** needs to be last ** -->
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/includes/css/slider.css" type="text/css" media="screen" /> 
